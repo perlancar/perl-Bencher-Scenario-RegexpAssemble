@@ -13,7 +13,7 @@ my $code_template_assemble_with_ra = 'my $ra = Regexp::Assemble->new; for (1.. <
 my $code_template_assemble_raw     = 'my @strs; for (1.. <num> ) { push @strs, join("", map {$main::chars->[rand @$main::chars]} 1..10) } my $re = "\\\\A(?:".join("|", map {quotemeta} sort {length($b) <=> length($a)} @strs).")\\\\z"; $re = qr/$re/';
 
 our $scenario = {
-    summary => 'Benchmark arbitrary size floating point arithmetics',
+    summary => 'Benchmark Regexp::Assemble',
     participants => [
         {
             name => 'assemble-with-ra',
