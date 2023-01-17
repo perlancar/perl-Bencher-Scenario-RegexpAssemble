@@ -1,11 +1,13 @@
-package Bencher::Scenario::RegexpAssemble;
-
-# DATE
-# VERSION
+package Bencher::Scenario::Regexp::Assemble;
 
 use 5.010001;
 use strict;
 use warnings;
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 $main::chars = ["a".."z"];
 
